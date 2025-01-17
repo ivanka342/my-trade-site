@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Trade Sections -->
+        <div class="trade" id="myTrade">
+            <h2>My Trade</h2>
+            <div class="items">
+                <button class="item" onclick="openCategory('pets')">Pets</button>
+                <button class="item" onclick="openCategory('eggs')">Eggs</button>
+                <button class="item" onclick="openCategory('vehicles')">Vehicles</button>
+                <button class="item" onclick="openCategory('others')">Others</button>
+            </div>
+        </div>
+        <div class="trade" id="otherTrade">
+            <h2>Other's Trade</h2>
+            <div class="items">
+                <button class="item" onclick="openCategory('pets')">Pets</button>
+                <button class="item" onclick="openCategory('eggs')">Eggs</button>
+                <button class="item" onclick="openCategory('vehicles')">Vehicles</button>
+                <button class="item" onclick="openCategory('others')">Others</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3>Select Item</h3>
+            <div id="categoryItems"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
